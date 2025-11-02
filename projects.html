@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Showcase of My Work">
+    <title>Projects - Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Alfonsus Agapinan</h1>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>My Projects</h2>
+                <p class="page-subtitle">Explore my work and see what I've built</p>
+            </div>
+        </section>
+
+        <section class="projects-carousel">
+            <div class="container">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous project">&#8249;</button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <div class="project-slide active">
+                                <div class="project-image">
+                                    <img src="assets/images/project1.png" alt="G-boy 9V Simple Videogame Console" class="project-image-img">
+                                </div>
+                                <div class="project-info">
+                                    <h3>G-boy: 9V Simple Videogame Console</h3>
+                                    <p class="project-description">
+                                        I built and soldered a handheld game console using a custom manufactured PCB and an Arduino UNO. 
+                                        The console runs games that I coded myself and displays them on a 16×2 LCD screen interfaced in 8-bit mode. 
+                                        The entire system is powered by a 9V battery, making it portable. This project taught me about PCB design, 
+                                        LCD interfacing protocols, and programming for embedded systems. It was challenging to get the timing 
+                                        right for the LCD communication and optimize the game code to run smoothly on the Arduino.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Arduino UNO</span>
+                                        <span class="tech-tag">16×2 LCD</span>
+                                        <span class="tech-tag">Custom PCB</span>
+                                        <span class="tech-tag">9V Battery</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://alfonsus-portfolio.pages.dev/" class="btn btn-primary" target="_blank">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-slide">
+                                <div class="project-image">
+                                    <img src="assets/images/project2.png" alt="Battery Powered Blinking Lightbox" class="project-image-img">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Battery Powered Blinking Lightbox</h3>
+                                    <p class="project-description">
+                                        I created a custom lightbox using an RGB LED strip connected to a custom designed and soldered PCB. 
+                                        The system is powered by a 9V battery, making it completely portable. I designed the PCB layout 
+                                        to handle the LED strip control and power management. The project involved learning about LED 
+                                        driver circuits, power consumption considerations for battery powered devices, and proper soldering 
+                                        techniques for PCB assembly. It was interesting to work out how to efficiently drive multiple LEDs 
+                                        while keeping the power draw low enough for battery operation.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">RGB LED Strip</span>
+                                        <span class="tech-tag">Custom PCB</span>
+                                        <span class="tech-tag">9V Battery</span>
+                                        <span class="tech-tag">Soldering</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://alfonsus-portfolio.pages.dev/" class="btn btn-primary" target="_blank">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-slide">
+                                <div class="project-image">
+                                    <img src="assets/images/project3.png" alt="Wall-Mounted Modular Hydroponic Tower" class="project-image-img">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Wall-Mounted Modular Hydroponic Tower</h3>
+                                    <p class="project-description">
+                                        This project is a work in progress that combines my interest in engineering design with sustainable 
+                                        urban gardening. I'm designing a wall-mounted modular planter system inspired by vertical hydroponic 
+                                        towers, but redesigned to be modular and customizable for small spaces like balconies or classrooms. 
+                                        The system uses cylindrical segments that can be attached side-by-side or stacked. Each segment holds 
+                                        interchangeable planting pods. The water flow system incorporates Tesla valve inspired channels that 
+                                        allow water to drain efficiently downward while resisting reverse flow and evaporation. I'm using 3D 
+                                        printing to prototype the modular components, Tesla valve channels, and mounting systems. This project 
+                                        involves learning about fluid dynamics principles, modular design, and material selection for outdoor 
+                                        use.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">CAD Design</span>
+                                        <span class="tech-tag">3D Printing</span>
+                                        <span class="tech-tag">Modular Design</span>
+                                        <span class="tech-tag">Tesla Valve</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <span class="btn btn-secondary" style="cursor: default;">Work in Progress</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next project">&#8250;</button>
+                </div>
+                <div class="carousel-dots">
+                    <button class="dot active" aria-label="Go to project 1"></button>
+                    <button class="dot" aria-label="Go to project 2"></button>
+                    <button class="dot" aria-label="Go to project 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <div class="container">
+                <h3>All Projects</h3>
+                <div class="projects-list">
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <img src="assets/images/project1.png" alt="G-boy 9V Simple Videogame Console" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-card-content">
+                            <h4>G-boy: 9V Simple Videogame Console</h4>
+                            <p>Handheld game console with custom PCB, Arduino UNO, and 16×2 LCD display.</p>
+                            <div class="project-card-tech">
+                                <span class="tech-tag-small">Arduino</span>
+                                <span class="tech-tag-small">LCD</span>
+                                <span class="tech-tag-small">PCB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <img src="assets/images/project2.png" alt="Battery Powered Blinking Lightbox" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Battery Powered Blinking Lightbox</h4>
+                            <p>RGB LED lightbox with custom PCB and 9V battery power supply.</p>
+                            <div class="project-card-tech">
+                                <span class="tech-tag-small">LED Strip</span>
+                                <span class="tech-tag-small">PCB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <img src="assets/images/project3.png" alt="Wall-Mounted Modular Hydroponic Tower" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Wall-Mounted Modular Hydroponic Tower</h4>
+                            <p>Modular planter system with Tesla valve water flow and 3D printed components.</p>
+                            <div class="project-card-tech">
+                                <span class="tech-tag-small">CAD</span>
+                                <span class="tech-tag-small">3D Printing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alfonsus Agapinan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/carousel.js"></script>
+</body>
+</html>
+
+

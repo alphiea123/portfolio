@@ -34,7 +34,7 @@
         <section class="page-header">
             <div class="container">
                 <h2>My Projects</h2>
-                <p class="page-subtitle">Explore my work and see what I've built</p>
+                <p class="page-subtitle">Research hardware, embedded systems, and fabrication work</p>
             </div>
         </section>
 
@@ -46,22 +46,182 @@
                         <div class="carousel-track">
                             <div class="project-slide active">
                                 <div class="project-image">
+                                    <div class="wip-placeholder">
+                                        <strong>Photo WIP</strong>
+                                        <span>Add <code>assets/images/havs-tracker.jpg</code></span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>HAVS Grip Tracker</h3>
+                                    <p class="project-meta">PiD Labs &middot; Undergraduate Lead Researcher &middot; Summer 2026</p>
+                                    <p class="project-description">
+                                        I led a URI Provost summer research project on measuring grip force on vibrating
+                                        power tools, work aimed at understanding and reducing Hand-Arm Vibration Syndrome (HAVS).
+                                        I designed 3D-printed drill handle covers in Onshape with a 0.8&nbsp;mm clearance gap so
+                                        force-sensitive resistors would not pinch at rest and create a false baseline. On the
+                                        electronics side I filtered EMI on analog sensor lines (about 15&nbsp;dB lower noise floor)
+                                        and wrote C++ firmware on an Arduino Mega 2560 for ~100&nbsp;Hz sampling, I2C OLED telemetry,
+                                        and a 5-second static-grip safety alarm. Four FSRs sit under rigid actuator pucks on the
+                                        handle; the display shows per-sensor and total load, and flags a static grip if force
+                                        stays above threshold without enough change. Findings were presented at the NJIT Summer
+                                        Research Symposium 2026. This work was supported by the URI Provost Fellowship, ISOTOPE,
+                                        and HSRI funding.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Arduino Mega 2560</span>
+                                        <span class="tech-tag">Force Sensors (FSR)</span>
+                                        <span class="tech-tag">I2C OLED</span>
+                                        <span class="tech-tag">Onshape CAD</span>
+                                        <span class="tech-tag">EMI Filtering</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <span class="btn btn-secondary" style="cursor: default;">Research Prototype</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-slide">
+                                <div class="project-image project-media">
+                                    <div class="wip-placeholder">
+                                        <strong>Photo WIP</strong>
+                                        <span>Add <code>assets/images/jackhammer-simulator.jpg</code></span>
+                                    </div>
+                                    <div class="mechanism-panel">
+                                        <p class="mechanism-caption">How it moves: a motor crank drives a reciprocating bit, like a small locomotive linkage.</p>
+                                        <div class="mechanism-stage">
+                                            <svg class="jackhammer-svg" viewBox="0 0 280 320" role="img" aria-label="Animation of a crank converting rotation into a reciprocating jackhammer bit">
+                                                <defs>
+                                                    <linearGradient id="housingGrad" x1="0" y1="0" x2="1" y2="1">
+                                                        <stop offset="0%" stop-color="#4a6278"/>
+                                                        <stop offset="100%" stop-color="#2c3e50"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <rect x="78" y="8" width="124" height="36" rx="8" fill="#3498db"/>
+                                                <rect x="108" y="0" width="64" height="18" rx="6" fill="#5dade2"/>
+                                                <rect x="70" y="40" width="140" height="168" rx="16" fill="url(#housingGrad)"/>
+                                                <rect x="82" y="52" width="116" height="144" rx="10" fill="#1a252f"/>
+                                                <g class="flywheel">
+                                                    <circle cx="140" cy="118" r="46" fill="#34495e" stroke="#95a5a6" stroke-width="4"/>
+                                                    <circle cx="140" cy="118" r="8" fill="#ecf0f1"/>
+                                                    <line x1="140" y1="118" x2="140" y2="80" stroke="#e74c3c" stroke-width="4" stroke-linecap="round"/>
+                                                    <circle cx="140" cy="80" r="7" fill="#e74c3c"/>
+                                                </g>
+                                                <g class="yoke">
+                                                    <rect x="96" y="150" width="88" height="22" rx="4" fill="#7f8c8d"/>
+                                                    <rect x="104" y="154" width="72" height="14" rx="3" fill="#1a252f"/>
+                                                    <rect x="132" y="170" width="16" height="78" fill="#bdc3c7"/>
+                                                    <polygon points="128,248 152,248 140,278" fill="#95a5a6"/>
+                                                    <polygon points="132,272 148,272 140,296" fill="#7f8c8d"/>
+                                                </g>
+                                                <rect x="40" y="298" width="200" height="14" rx="3" fill="#566573"/>
+                                                <rect x="118" y="292" width="44" height="10" fill="#7f8c8d"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Jackhammer Simulator for Telerehabilitation</h3>
+                                    <p class="project-meta">PiD Labs &middot; Undergraduate Research Assistant &middot; 2025–2026</p>
+                                    <p class="project-description">
+                                        On a 4-person multidisciplinary team I helped build a robotic jackhammer simulator
+                                        for task-oriented telerehabilitation, advised by Dr. Roni Barak Ventura. The idea is
+                                        a safe, sensor-integrated stand-in for a real jackhammer so injured construction workers
+                                        can retrain grip, posture, and vibration tolerance without clinic-only therapy.
+                                        I drafted KiCad schematics and custom component symbols, then built and debugged
+                                        breadboard and screw-terminal prototypes tying a microcontroller to HX711 load-cell
+                                        modules, motor drivers, and an I2C 1602 LCD. A locomotive-style crank converts rotary
+                                        motor motion into a reciprocating bit, which is what the animation on the left shows.
+                                        The team secured and managed $3,000+ in project funding for this work.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">KiCad</span>
+                                        <span class="tech-tag">HX711 Load Cells</span>
+                                        <span class="tech-tag">PWM Motor Control</span>
+                                        <span class="tech-tag">I2C LCD</span>
+                                        <span class="tech-tag">Arduino</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <span class="btn btn-secondary" style="cursor: default;">Hardware Prototype</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-slide">
+                                <div class="project-image">
+                                    <div class="wip-placeholder">
+                                        <strong>Photo WIP</strong>
+                                        <span>Add <code>assets/images/hardware-test-suite.jpg</code></span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Automated Python Hardware Test Suite</h3>
+                                    <p class="project-meta">Personal / lab tooling &middot; 2026</p>
+                                    <p class="project-description">
+                                        I built a Python (PySerial) script that reads microcontroller data over UART at
+                                        9600 baud and runs automatic pass/fail voltage checks in a 3.0&nbsp;V to 3.6&nbsp;V window.
+                                        Over 100 continuous test runs, that cut manual testing time by about 85%. Results
+                                        are written straight to CSV with live VPython graphs so the same log can be opened
+                                        in Excel for later analysis.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">PySerial</span>
+                                        <span class="tech-tag">UART</span>
+                                        <span class="tech-tag">CSV Logging</span>
+                                        <span class="tech-tag">VPython</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <span class="btn btn-secondary" style="cursor: default;">Lab Tooling</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-slide">
+                                <div class="project-image">
+                                    <div class="wip-placeholder">
+                                        <strong>Photo WIP</strong>
+                                        <span>Add <code>assets/images/combat-robotics.jpg</code></span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Combat Robotics — NJIT Robotics Club</h3>
+                                    <p class="project-meta">NJIT Robotics Club &middot; 2025</p>
+                                    <p class="project-description">
+                                        I designed 3D robot assemblies in Onshape under tight weight limits (±0.1&nbsp;oz) and
+                                        machined custom parts to about ±0.005&nbsp;in. I built and tested drivetrain and weapon
+                                        subsystems across 10+ stress tests. The robot took 1st place in club matches.
+                                        I also won 1st place in NJIT's Makerspace Speed-CAD Challenge for fast, accurate
+                                        3D modeling under a time limit.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Onshape CAD</span>
+                                        <span class="tech-tag">Precision Machining</span>
+                                        <span class="tech-tag">Stress Testing</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <span class="btn btn-secondary" style="cursor: default;">Club Competition</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-slide">
+                                <div class="project-image">
                                     <img src="assets/images/project1.png" alt="G-boy 9V Simple Videogame Console" class="project-image-img">
                                 </div>
                                 <div class="project-info">
                                     <h3>G-boy: 9V Simple Videogame Console</h3>
+                                    <p class="project-meta">Personal hardware project &middot; 2024</p>
                                     <p class="project-description">
-                                        I built and soldered a handheld game console using a custom manufactured PCB and an Arduino UNO. 
-                                        The console runs games that I coded myself and displays them on a 16×2 LCD screen interfaced in 8-bit mode. 
-                                        The entire system is powered by a 9V battery, making it portable. This project taught me about PCB design, 
-                                        LCD interfacing protocols, and programming for embedded systems. It was challenging to get the timing 
-                                        right for the LCD communication and optimize the game code to run smoothly on the Arduino.
+                                        I built and soldered a handheld game console using a custom manufactured PCB and an Arduino UNO.
+                                        The console runs games that I coded myself and displays them on a 16×2 LCD screen interfaced in 8-bit mode.
+                                        I hand-soldered 40+ SMD and through-hole parts and used a 16-channel logic analyzer to fix display
+                                        timing bugs across 9 game modes. The whole system runs from a 9V battery.
                                     </p>
                                     <div class="project-tech">
                                         <span class="tech-tag">Arduino UNO</span>
                                         <span class="tech-tag">16×2 LCD</span>
                                         <span class="tech-tag">Custom PCB</span>
-                                        <span class="tech-tag">9V Battery</span>
+                                        <span class="tech-tag">Logic Analyzer</span>
                                     </div>
                                     <div class="project-links">
                                         <a href="https://alfonsus-portfolio.pages.dev/" class="btn btn-primary" target="_blank">View Project</a>
@@ -76,12 +236,11 @@
                                 <div class="project-info">
                                     <h3>Battery Powered Blinking Lightbox</h3>
                                     <p class="project-description">
-                                        I created a custom lightbox using an RGB LED strip connected to a custom designed and soldered PCB. 
-                                        The system is powered by a 9V battery, making it completely portable. I designed the PCB layout 
-                                        to handle the LED strip control and power management. The project involved learning about LED 
-                                        driver circuits, power consumption considerations for battery powered devices, and proper soldering 
-                                        techniques for PCB assembly. It was interesting to work out how to efficiently drive multiple LEDs 
-                                        while keeping the power draw low enough for battery operation.
+                                        I created a custom lightbox using an RGB LED strip connected to a custom designed and soldered PCB.
+                                        The system is powered by a 9V battery, making it completely portable. I designed the PCB layout
+                                        to handle the LED strip control and power management. The project involved learning about LED
+                                        driver circuits, power consumption considerations for battery powered devices, and proper soldering
+                                        techniques for PCB assembly.
                                     </p>
                                     <div class="project-tech">
                                         <span class="tech-tag">RGB LED Strip</span>
@@ -102,15 +261,11 @@
                                 <div class="project-info">
                                     <h3>Wall-Mounted Modular Hydroponic Tower</h3>
                                     <p class="project-description">
-                                        This project is a work in progress that combines my interest in engineering design with sustainable 
-                                        urban gardening. I'm designing a wall-mounted modular planter system inspired by vertical hydroponic 
-                                        towers, but redesigned to be modular and customizable for small spaces like balconies or classrooms. 
-                                        The system uses cylindrical segments that can be attached side-by-side or stacked. Each segment holds 
-                                        interchangeable planting pods. The water flow system incorporates Tesla valve inspired channels that 
-                                        allow water to drain efficiently downward while resisting reverse flow and evaporation. I'm using 3D 
-                                        printing to prototype the modular components, Tesla valve channels, and mounting systems. This project 
-                                        involves learning about fluid dynamics principles, modular design, and material selection for outdoor 
-                                        use.
+                                        This project is a work in progress that combines engineering design with sustainable
+                                        urban gardening. I'm designing a wall-mounted modular planter system inspired by vertical hydroponic
+                                        towers, redesigned to be modular for small spaces. Cylindrical segments can attach side-by-side or stack,
+                                        and Tesla-valve-inspired channels let water drain downward while resisting reverse flow.
+                                        I'm using 3D printing to prototype the modules and mounts.
                                     </p>
                                     <div class="project-tech">
                                         <span class="tech-tag">CAD Design</span>
@@ -131,6 +286,10 @@
                     <button class="dot active" aria-label="Go to project 1"></button>
                     <button class="dot" aria-label="Go to project 2"></button>
                     <button class="dot" aria-label="Go to project 3"></button>
+                    <button class="dot" aria-label="Go to project 4"></button>
+                    <button class="dot" aria-label="Go to project 5"></button>
+                    <button class="dot" aria-label="Go to project 6"></button>
+                    <button class="dot" aria-label="Go to project 7"></button>
                 </div>
             </div>
         </section>
@@ -139,6 +298,65 @@
             <div class="container">
                 <h3>All Projects</h3>
                 <div class="projects-list">
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <div class="wip-placeholder wip-placeholder-small">Photo WIP</div>
+                        </div>
+                        <div class="project-card-content">
+                            <h4>HAVS Grip Tracker</h4>
+                            <p>Sensorized drill handle that tracks grip force and warns on static grip.</p>
+                            <div class="project-card-tech">
+                                <span class="tech-tag-small">Arduino Mega</span>
+                                <span class="tech-tag-small">FSR</span>
+                                <span class="tech-tag-small">Onshape</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <div class="wip-placeholder wip-placeholder-small">Photo WIP</div>
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Jackhammer Telerehab Simulator</h4>
+                            <p>Crank-driven jackhammer stand-in with load cells, motor drive, and LCD telemetry.</p>
+                            <div class="project-card-tech">
+                                <span class="tech-tag-small">KiCad</span>
+                                <span class="tech-tag-small">HX711</span>
+                                <span class="tech-tag-small">PWM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <div class="wip-placeholder wip-placeholder-small">Photo WIP</div>
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Automated Hardware Test Suite</h4>
+                            <p>PySerial UART tests with pass/fail voltage checks, CSV logs, and live graphs.</p>
+                            <div class="project-card-tech">
+                                <span class="tech-tag-small">Python</span>
+                                <span class="tech-tag-small">UART</span>
+                                <span class="tech-tag-small">CSV</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <div class="wip-placeholder wip-placeholder-small">Photo WIP</div>
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Combat Robotics</h4>
+                            <p>Onshape CAD and machined drivetrain/weapon parts; 1st place in club matches.</p>
+                            <div class="project-card-tech">
+                                <span class="tech-tag-small">Onshape</span>
+                                <span class="tech-tag-small">Machining</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-card">
                         <div class="project-card-image">
                             <img src="assets/images/project1.png" alt="G-boy 9V Simple Videogame Console" style="width: 100%; height: 100%; object-fit: cover;">
@@ -188,7 +406,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Alfonsus Agapinan. All rights reserved.</p>
+            <p>&copy; 2026 Alfonsus Agapinan. All rights reserved.</p>
             <div class="footer-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -201,7 +419,6 @@
 
     <script src="scripts/main.js"></script>
     <script src="scripts/carousel.js"></script>
+    <script src="scripts/mechanism.js"></script>
 </body>
 </html>
-
-

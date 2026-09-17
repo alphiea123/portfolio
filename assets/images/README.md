@@ -1,26 +1,22 @@
 # Images Folder
 
-Place your project screenshots and images here.
+Place project screenshots and images here.
 
-## Recommended Structure
+## Current files
 
-- `project1.jpg` or `project1.png` - Screenshot for Project 1
-- `project2.jpg` or `project2.png` - Screenshot for Project 2
-- `project3.jpg` or `project3.png` - Screenshot for Project 3
-- `profile.jpg` or `profile.png` - Your profile photo (for About page)
+- `bestportrait.png` — About page photo
+- `project1.png` — G-boy console
+- `project2.png` — Lightbox
+- `project3.png` — Hydroponic tower
 
-## Tips
+## Still needed (WIP placeholders on the site)
 
-- Keep image file sizes under 1MB for faster loading
-- Use descriptive filenames
-- Recommended formats: JPG for photos, PNG for graphics with transparency
-- Optimize images before uploading to reduce file size
+Drop files in with these exact names to replace the striped "Photo WIP" blocks:
 
-## How to Use
+- `havs-tracker.jpg` — HAVS drill handle / OLED / sensors
+- `jackhammer-simulator.jpg` — assembled jackhammer simulator
+- `jackhammer-mechanism.gif` — optional; if present, it replaces the SVG crank animation
+- `hardware-test-suite.jpg` — UART test setup or graph screenshot
+- `combat-robotics.jpg` — robot or CAD render
 
-1. Add your images to this folder
-2. Update the HTML files to reference your images:
-   ```html
-   <img src="assets/images/your-image.jpg" alt="Description">
-   ```
-
+Tips: keep files under ~1MB, JPG for photos, GIF or MP4-style GIF for the mechanism loop.

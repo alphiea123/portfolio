@@ -567,6 +567,43 @@ main {
     display: block;
 }
 
+/* ========================================
+   Media Collage Setup
+   ======================================== */
+   .media-collage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    height: 100%;
+    /* Overrides the default 4/3 aspect ratio so it can expand */
+    aspect-ratio: auto; 
+}
+
+.collage-main {
+    width: 100%;
+    /* Forces the GIF into a clean 16:9 box */
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.collage-row {
+    display: flex;
+    gap: var(--spacing-xs);
+    width: 100%;
+}
+
+.collage-sub {
+    /* Splits the row perfectly in half, accounting for the gap */
+    width: calc(50% - (var(--spacing-xs) / 2));
+    /* Gives the smaller images a uniform box */
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
 @keyframes crank-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
